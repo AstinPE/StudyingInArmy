@@ -1,0 +1,50 @@
+h1 {
+  margin: 20px 10px 20px 10px;
+  text-align: center;
+}
+
+ul.top_menu {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+ul.top_menu > li {
+  padding: 5px 10px 5px 10px;
+  
+}
+
+ul.icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+ul.icons > li {
+  padding: 10px 10px 10px 10px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+a.active: {
+  color: white;
+  background-color: green;
+}

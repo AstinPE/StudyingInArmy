@@ -1,0 +1,79 @@
+기본적으로 텍스트 정렬시에는
+text-align: center, left, right, bottom, justify
+-> 솔직히 justify는 아직 모르겠다
+
+css에서 html요소들의 class를 불러오는 방법은 ".[class name]" 이다
+
+ul.icons > li   이건 icons라는 이름을 가진 unordered list 속에 있는 list item들을 전부 불러오는것이다
+한마디로 그 블럭 안에 있는 특정 요소들을 한번에 제어가능함
+
+<li> 태그 안에는 뭐든 올 수 있다. <a>를 넣어 링크를 넣을 수도 있음
+
+링크를 꾸밀때는
+link visited hover active 이 순서로 설정할 것 / 근데 active 다음에 focus도 있음(카보드나 마우스 이벤트, 혹은 다른 해당 요소가 포커스를 갖고 있는 상태라고 함)
+
+링크 꾸밀때 text-decoration: none; 하면 기본설정 전부 사라짐
+
+<a href="">여기에 글씨 넣어도 되고 이미지도 됨</a>
+예를들어 <a href=""><img src="logo.jpg"></a>  하면 logo.jpg를 클릭하면 링크가 열리는 구조임
+
+<a href="" target="_blank">ㅁㅁㅁ</a> 이렇게 하면 새창에서 링크가 열림
+
+근데 a:active 이거는 언제를 말하는거냐
+
+<a> 태그에서 href 입력할 때 상대경로도 쌉가능 / 예를들어 "..\ㄴㅇㅁㄹㄴㅇㄹㄴㅁㅇ" 가능함
+내부 파일은 "#ㅁㄴㅇㄻㄴㅇㄹ" 이렇게 하셈
+
+<a> 태그에서 target 속성은 _self, _parent, _top, _blank 가 있고 디폴트값은 _self 이거임
+
+<a>에서 이메일 링크 생성도 가능함. href="mailto:asdf@naver.com?subject=naver">asdfasf</a>이렇게 하셈
+아 그리고 <a href="" download> 이렇게 하면 그 링크 내용이 다운로드됨
+
+display: flex   이거는 개체들을 가로로 정렬함. 단, padding이 없어서 직접 설정해줘야함
+justify-content: center 이거는 개체들 가운데 정렬
+
+list-style-type: none  이거는 리스트에서 앞에 있는 번호나 점을 지울때 씀
+주의) padding-left: 0px; 이거 해줘야 점이 차지하는 빈 공간도 사라짐
+
+
+
+근데 p에서 가운데 정렬은 알겠는데 세로로 가운데 정렬은 모르겠다
+
+margin-left: auto  이거는 마진을 자동으로 풀로 채움. margin-left 랑 margin-right 같이  auto로 설정하면
+이거도 가운데정렬됨
+
+
+html에서 css 외부파일 불러오는법 : <link rel="stylesheet" href="mystyle.css">  href에서 사이트 이름 적어도 됨
+
+
+li 속성 중 float: left; 를 주면 가로로 정렬됨
+
+
+
+
+요소에 수직정렬속성은 vertical-align: middle; 이거임 근데 왜 <p> 에서는 안된거냐;;
+아 스벅 ul에 줘야하는데 아니 맞게 줬잖아 아니 body에 줬어야 했나?
+
+vertical-align 요소들은 "top", "middle", "bottom", "baseline", "sub", "super", "text-top", "text-bottom"
+테이블 셀에 적용할때는 top, middle, bottom만 적용되고 나머지 속성값들은 인라인 요소에만 적용됨
+
+오 display: inline-block; 준 다음 position: relative;  주고 그다음 line-height를 개체의 높이랑 같게하면 가운데정렬임
+근데 2줄 이후 내용은 부모요소 밖에 표시되서 제한적으로 사용해야함
+
+
+수직정렬 그냥 부모요소에 display: table 주고 수직정렬할 요소에 display: table-cell; 준 다음 vertical-align: middle; 주는게 좋을듯
+
+.vcenter > div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+}
+오 이게 깔끔함 절대위치로 좌측상단(0,0)으로 가져다놓고 개체의 좌측 상단을 부모객체의 높이 50% 지점에 두고 개체 자신의 높이의 50%만큼 위로 올리는거임
+
+수평은 text-align: center; 쓰셈
+오 margin: auto; 하면 자동을 마진 부여해서 요소가 가운데로 위치하도록 바꿔줌 ㄷㄷ
+
+
+정리는 내일 개인정비때 와서 해야지
