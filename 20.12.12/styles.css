@@ -1,15 +1,18 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   display: flex;
   margin: 0px 0px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
 }
 
 .side_menu_div {
   width: 250px;
   text-align: left;
   margin: 0px 0px;
-  background-color: rgba(0, 30, 30, 0.125);
+  background-color: #D7D5D2;
+  font-size: 20px;
 }
 
 .profileBox {
@@ -34,15 +37,30 @@ body {
   margin: 10px 10px;
 }
 
+.logo_li {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#menu_button {
+  width: 30px;
+  height: 30px;
+}
+
+#menu_button:hover {
+  background-color: #4F4D4A;
+}
+
+.side_logo > li {
+  text-align: center;
+  padding: 10px 8px;
+}
+
 .side_menu {
   list-style-type: none;
   text-align: center;
   padding-left: 0px;
   margin: 5px auto;
-}
-
-.side_logo > li {
-  padding: 10px 8px;
 }
 
 .side_menu > li {
