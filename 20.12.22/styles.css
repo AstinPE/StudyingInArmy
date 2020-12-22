@@ -1,0 +1,109 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  margin: 0px 0px;
+}
+
+.side_menu_div {
+  width: 250px;
+  text-align: left;
+  margin: 0px 0px;
+  background-color: #D7D5D2;
+  font-size: 20px;
+}
+
+.profileBox {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.side_logo {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0px;
+  margin: 10px 10px;
+}
+
+.side_logo > li {
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 8px;
+}
+
+#logo_li {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.search_menu {
+  margin: 10px 10px;
+}
+
+.search_menu > ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.search_menu li {
+  text-align: center;
+  vertical-align: middle;
+  padding: auto atuo;
+}
+
+#search_textarea {
+  width: 200px;
+  height: 30px;
+}
+
+#search_icon {
+  margin: auto 5px;
+}
+
+.side_menu {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0px;
+  margin: 5px auto;
+}
+
+.side_menu > li {
+  padding: 5px 30%;
+  margin: 20px auto;
+}
+/* 이거대신 html에서 같은 class를 부여해줘도 가능하다. */
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
